@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- cabeçalho -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de massa</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+
+<body>
+    <div id="interface">
+            <hgroup>
+                <h1 class="title">Calculo de IMC</h1>
+            </hgroup>
+            <div class="menu">
+                <button class="botao">Menu</button>
+                <div class="links">
+                    <a href="./index2.0.html">Login</a>
+                    <a href="./index3.0.html">Editar</a>
+                    <a href="./index3.0.html">Home</a>
+                </div>
+            </div>
+            <header id="cabecalho2">
+                <hgroup>
+                    <h3 class="direita">Informações sobre o IMC</h3>
+                </hgroup>
+                <h2 class="who">O que é?</h2>
+                <p class="text">O índice de massa corporal, conhecido como IMC, é uma técnica utilizada para verificar o estado
+                    nutricional e observar se a pessoa está dentro dos<br>padrões de normalidade com relação ao seu peso e
+                    estatura.
+                </p>
+                <p class="text2">
+                    Esta técnica é medida por meio da fórmula: IMC = Peso (Kg)/ (Altura(m))². Neste cálculo leva-se em
+                    conta o peso e a altura do indivíduo,<br> dividindo o peso pela altura elevada ao quadrado. Este cálculo
+                    é uma forma simples e de grande importância para detectar se a pessoa<br>apresenta um grau de
+                    desnutrição, se está no padrão de normalidade, sobrepeso, obesidade ou obesidade mórbida.
+
+                </p>
+                <br>
+
+
+                <h1 id="imc">Calculando-imc</h1>
+                <fieldset id="calculando-imc">
+                    <label>Sexo:</label>
+                    <br>
+                    <select name="Sexo" id="sexo">
+                        <option value=""></option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                    </select>
+                    <br>
+                    <label for="kilos">Peso:</label>
+                    <input id="kilos" name="kilos" type="number" />
+                    <br>
+                    <label for="metros">Altura:</label>
+                    <input id="metros" name="metros" type="number" />
+                    <br>
+                    <input id="calculo" name="calculo" type="button" value="Calcular" onclick="calular()" />
+                    <br>
+                </fieldset>
+                <br>
+                <div id="resultado"></div>
+                <br>
+                <br>
+                <br>
+                   <p class="centro">Após a realização do cálculo, deve-se observar o resultado de acordo com os seguintes valores:</p> 
+                   <br>
+                    <table id="tabela">
+                        <caption>Tabela IMC<span>Mar/2022</span></caption>
+
+                        <tr>
+                            <td class="ce">Abaixo de 18,5:</td>
+                            <td class="cd">Desnutrição</td>
+                        </tr>
+                        <tr>
+                            <td class="ce">Entre 18,5 e 24,5:</td>
+                            <td class="cd">Peso normal</td>
+                        </tr>
+                        <tr>
+                            <td class="ce">Entre 25,0 e 29,9:</td>
+                            <td class="cd">Sobrepeso</td>
+                        </tr>
+                        <tr>
+                            <td class="ce">Entre 30,0 e 39,9:</td>
+                            <td class="cd">Obesidade</td>
+                        </tr>
+                        <tr>
+                            <td class="ce">Acima de 40,0:</td>
+                            <td class="cd">Obesidade Mórbida</td>
+                        </tr>
+                    </table>
+                    <h3>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <p class="footer">Copyright &copy; 2022 - by Leonardo Mattos</p>
+                    </h3>
+                </header>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
